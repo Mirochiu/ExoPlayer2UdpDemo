@@ -28,6 +28,8 @@ import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter;
 import com.google.android.exoplayer2.upstream.UdpDataSource;
 import com.google.android.exoplayer2.util.TimestampAdjuster;
 
+import java.net.MulticastSocket;
+
 import static com.google.android.exoplayer2.extractor.ts.TsExtractor.MODE_SINGLE_PMT;
 
 public class MainActivity extends AppCompatActivity {
@@ -61,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
         // set player in playerView
         playerView.setPlayer(player);
         playerView.requestFocus();
-
 
         //Create default UDP Datasource
         DataSource.Factory factory = () -> new UdpDataSource(3000, 100000);

@@ -2,5 +2,6 @@
     <string name="app_name">ExoPlayer2UdpDemo</string>
     <string name="main_activity_screen_title">ExoPlayer2 UDP, RTP Stream Demo</string>
     <string name="url_editbox_placeholder">udp://234.x.x.x:xxxx or rtp://234.x.x.x:xxxx</string>
+    <string name="default_url">udp://224.1.4.248:11111</string>
     <string name="text_play">Play</string>
 </resources>
